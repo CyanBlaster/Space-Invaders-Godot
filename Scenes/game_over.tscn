@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuf8ubk20fhxy"]
+
+[ext_resource type="Script" uid="uid://5f7mvwkx4c84" path="res://Scripts/game_over.gd" id="1_8fo1c"]
+[ext_resource type="Texture2D" uid="uid://clai002a8r05v" path="res://Sprites/Game_Over.png" id="2_ek8ke"]
+
+[node name="Game Over" type="Node2D"]
+script = ExtResource("1_8fo1c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(788.86926, 322.00003)
+scale = Vector2(11.417386, 10.68)
+texture = ExtResource("2_ek8ke")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 475.0
+offset_top = 542.0
+offset_right = 667.0
+offset_bottom = 565.0
+text = "Press Space to Try Again."

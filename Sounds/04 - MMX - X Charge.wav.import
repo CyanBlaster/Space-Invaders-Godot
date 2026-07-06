@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://biha8caoxnk47"
+path="res://.godot/imported/04 - MMX - X Charge.wav-5e2091dc67cfae85472cf5754c259e37.sample"
+
+[deps]
+
+source_file="res://Sounds/04 - MMX - X Charge.wav"
+dest_files=["res://.godot/imported/04 - MMX - X Charge.wav-5e2091dc67cfae85472cf5754c259e37.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

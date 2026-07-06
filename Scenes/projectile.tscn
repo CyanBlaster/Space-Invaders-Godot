@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://p7s3ljooxfoh"]
+
+[ext_resource type="Script" uid="uid://cfq6n1s5f2ujh" path="res://Scripts/projectile.gd" id="1_tl4hk"]
+[ext_resource type="Texture2D" uid="uid://c4m1lhox80tna" path="res://Sprites/Custom _ Edited - Mega Man X Customs - Weapons - X-Buster_Z-Buster Shot (Mega Man 8-bit Deathmatch-Style) (2).png" id="2_d4467"]
+[ext_resource type="AudioStream" uid="uid://1ktbt1pe763w" path="res://Sounds/01 - MMX - X Regular Shot.wav" id="3_e1077"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_akgne"]
+size = Vector2(14, 20)
+
+[node name="shot" type="CharacterBody2D" node_paths=PackedStringArray("sound")]
+script = ExtResource("1_tl4hk")
+sound = NodePath("AudioStreamPlayer")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 4.712389
+texture = ExtResource("2_d4467")
+region_enabled = true
+region_rect = Rect2(28, 8, 20, 14)
+
+[node name="shot" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="shot"]
+shape = SubResource("RectangleShape2D_akgne")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_e1077")
+
+[connection signal="area_entered" from="shot" to="." method="_on_shot_area_entered"]

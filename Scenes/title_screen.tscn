@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://difh4k4p5xiru"]
+
+[ext_resource type="Script" uid="uid://bgxvvppyub4pw" path="res://Scripts/title_screen.gd" id="1_klylv"]
+[ext_resource type="Texture2D" uid="uid://dohb82b4mohar" path="res://Sprites/background.png" id="2_4gxqj"]
+[ext_resource type="Texture2D" uid="uid://dtx4h7d656kw5" path="res://Sprites/title.png" id="2_p3fck"]
+
+[node name="Title Screen" type="Node2D"]
+script = ExtResource("1_klylv")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(817, 905.0001)
+scale = Vector2(5.5000005, 5.5000005)
+texture = ExtResource("2_4gxqj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(592, 291)
+scale = Vector2(5.2, 5.2)
+texture = ExtResource("2_p3fck")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 493.0
+offset_top = 367.0
+offset_right = 645.0
+offset_bottom = 390.0
+text = "Press Space to Play."
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 221.0
+offset_top = 487.0
+offset_right = 959.0
+offset_bottom = 510.0
+text = "Controls:Press Space to shoot, arrow keys to move left and right, and M to mute/unmute music."

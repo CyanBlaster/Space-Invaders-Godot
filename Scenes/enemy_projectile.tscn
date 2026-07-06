@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://damd02vyr2eha"]
+
+[ext_resource type="Texture2D" uid="uid://cpdhf7ndyk268" path="res://Sprites/laser.png" id="1_ff34o"]
+[ext_resource type="Script" uid="uid://g58yefjgpv12" path="res://Scripts/enemy_projectile.gd" id="1_vpq67"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qfdvx"]
+size = Vector2(15, 63)
+
+[node name="enemy_projectile" type="CharacterBody2D"]
+script = ExtResource("1_vpq67")
+
+[node name="enemyfire" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemyfire"]
+position = Vector2(-0.5, -2.5)
+shape = SubResource("RectangleShape2D_qfdvx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3.8146973e-06, 1)
+scale = Vector2(0.062000018, 0.08469663)
+texture = ExtResource("1_ff34o")
