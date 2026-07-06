@@ -25,6 +25,7 @@ func _process(_delta: float) -> void:
 	if(timer > 0):
 		timer -= _delta
 		if(timer <= 0):
+			global.level += 1
 			global.enemies -= 1
 			spawn_enemies()
 	if(Input.is_action_just_pressed("music")):

@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bvvu1gdvugj6g"]
+[gd_scene load_steps=7 format=3 uid="uid://bvvu1gdvugj6g"]
 
 [ext_resource type="Script" uid="uid://x1i2f2faetrw" path="res://Scripts/scene.gd" id="1_8t5iv"]
 [ext_resource type="Texture2D" uid="uid://dohb82b4mohar" path="res://Sprites/background.png" id="2_yp48q"]
 [ext_resource type="PackedScene" uid="uid://darjgb3fu5rx" path="res://Scenes/player.tscn" id="3_3bdrj"]
 [ext_resource type="AudioStream" uid="uid://78bd4gcl2gci" path="res://Sounds/Sonic CD Stardust Speedway Bad Future JPEU HD.mp3" id="4_ubbiv"]
 [ext_resource type="PackedScene" uid="uid://c7cydixms2uno" path="res://health.tscn" id="5_yp48q"]
+[ext_resource type="Script" uid="uid://bro2wyd6ngatd" path="res://Scenes/level_tracker.gd" id="6_3bdrj"]
 
 [node name="Main_Scene" type="Node2D" node_paths=PackedStringArray("music")]
 script = ExtResource("1_8t5iv")
@@ -30,3 +31,11 @@ offset_top = 584.0
 offset_right = 86.0
 offset_bottom = 607.0
 text = "Health"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 26.0
+offset_right = 57.0
+offset_bottom = 49.0
+text = "Level"
+script = ExtResource("6_3bdrj")
